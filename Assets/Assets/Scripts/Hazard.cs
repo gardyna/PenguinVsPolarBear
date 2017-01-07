@@ -20,7 +20,7 @@ public class Hazard : MonoBehaviour {
 	}
 
     private void FixedUpdate() {
-        this.GetComponent<Rigidbody2D>().transform.Translate(new Vector2(-0.12f, 0));
+        this.GetComponent<Rigidbody2D>().transform.Translate(new Vector2(-m_speed, 0));
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
