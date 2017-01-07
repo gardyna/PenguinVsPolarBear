@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: 5e0b83dbdf588d74782430ff1c502c26
+timeCreated: 1483792291
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DS DSi - Drawn to Life - Penguin_0
+    21300002: DS DSi - Drawn to Life - Penguin_1
+    21300004: DS DSi - Drawn to Life - Penguin_2
+    21300006: DS DSi - Drawn to Life - Penguin_3
+    21300008: DS DSi - Drawn to Life - Penguin_4
+    21300010: DS DSi - Drawn to Life - Penguin_5
+    21300012: DS DSi - Drawn to Life - Penguin_6
+    21300014: DS DSi - Drawn to Life - Penguin_7
+    21300016: DS DSi - Drawn to Life - Penguin_8
+    21300018: DS DSi - Drawn to Life - Penguin_9
+    21300020: DS DSi - Drawn to Life - Penguin_10
+    21300022: DS DSi - Drawn to Life - Penguin_11
+    21300024: DS DSi - Drawn to Life - Penguin_12
+    21300026: DS DSi - Drawn to Life - Penguin_13
+    21300028: DS DSi - Drawn to Life - Penguin_14
+    21300030: DS DSi - Drawn to Life - Penguin_15
+    21300032: DS DSi - Drawn to Life - Penguin_16
+    21300034: DS DSi - Drawn to Life - Penguin_17
+    21300036: DS DSi - Drawn to Life - Penguin_18
+    21300038: DS DSi - Drawn to Life - Penguin_19
+    21300040: DS DSi - Drawn to Life - Penguin_20
+    21300042: DS DSi - Drawn to Life - Penguin_21
+    21300044: DS DSi - Drawn to Life - Penguin_22
+    21300046: DS DSi - Drawn to Life - Penguin_23
+    21300048: DS DSi - Drawn to Life - Penguin_24
+    21300050: DS DSi - Drawn to Life - Penguin_25
+    21300052: DS DSi - Drawn to Life - Penguin_26
+    21300054: DS DSi - Drawn to Life - Penguin_27
+    21300056: DS DSi - Drawn to Life - Penguin_28
+    21300058: DS DSi - Drawn to Life - Penguin_29
+    21300060: DS DSi - Drawn to Life - Penguin_30
+    21300062: DS DSi - Drawn to Life - Penguin_31
+    21300064: DS DSi - Drawn to Life - Penguin_32
+    21300066: DS DSi - Drawn to Life - Penguin_33
+    21300068: DS DSi - Drawn to Life - Penguin_34
+    21300070: DS DSi - Drawn to Life - Penguin_35
+    21300072: DS DSi - Drawn to Life - Penguin_36
+    21300074: DS DSi - Drawn to Life - Penguin_37
+    21300076: DS DSi - Drawn to Life - Penguin_38
+    21300078: DS DSi - Drawn to Life - Penguin_39
+    21300080: DS DSi - Drawn to Life - Penguin_40
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 347
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 347
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 347
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 347
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_4
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 347
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 347
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_6
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 347
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_7
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 347
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 278
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_9
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 278
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_10
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 278
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 278
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_12
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 278
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_13
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 278
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_14
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 278
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_15
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 278
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 209
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_17
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 209
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_18
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 209
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_19
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 209
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_20
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 209
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_21
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 209
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_22
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 209
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_23
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 209
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_24
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 209
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_25
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_26
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_27
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_28
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_29
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_30
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 140
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_31
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 71
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_32
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 71
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_33
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 71
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_34
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 71
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_35
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 71
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_36
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 71
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_37
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 71
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_38
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 71
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_39
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 71
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DS DSi - Drawn to Life - Penguin_40
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

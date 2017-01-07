@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class GroundManager : MonoBehaviour {
 
-    public List<GameObject> sprites;
+    [SerializeField]
+    private float m_groundSpeed = 0.1f;
 
+    [SerializeField]
+    private List<GameObject> sprites;
+    [SerializeField]
     public BoxCollider2D outBox;
 
 	// Use this for initialization
@@ -22,7 +26,7 @@ public class GroundManager : MonoBehaviour {
     private void FixedUpdate() {
         // move all objects allong the x axis
         foreach (GameObject obj in sprites){
-            obj.transform.Translate(new Vector2(-0.1f, 0));
+            obj.transform.Translate(new Vector2(-m_groundSpeed, 0));
         }
 
         // if the leftmost object left the frame move it to the end
