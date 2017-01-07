@@ -8,7 +8,7 @@ public class Hazard : MonoBehaviour {
     private float m_speed = 0.11f;
 
 
-    private bool working = true;
+    public bool isworking = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -25,10 +25,10 @@ public class Hazard : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision) {
         PlatformCharacter2D player = collision.gameObject.GetComponent<PlatformCharacter2D>();
-        if (player && working) {
+        if (player && isworking) {
             print(player.IsJumping());
             if (!player.IsJumping()) {
-                working = false;
+                isworking = false;
                 StartCoroutine(player.Fail());
             }
         }
