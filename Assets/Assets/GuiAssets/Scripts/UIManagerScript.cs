@@ -26,30 +26,55 @@ public class UIManagerScript : MonoBehaviour {
 		
 	}
 
+    /// <summary>
+    /// Called when start button is pressed
+    /// launches the main scene
+    /// </summary>
     public void StartGame() {
         SceneManager.LoadScene("Main");
     }
 
+    /// <summary>
+    /// Called when settings button is pressed
+    /// brings forth the settings panel
+    /// </summary>
     public void OpenSettings() {
         SetAllButtonsVisible(false);
         m_settingsDialog.SetBool("isHidden", false);
     }
 
+    /// <summary>
+    /// Called when the top right button on settings pannel is pressed
+    /// goes back to main selection
+    /// </summary>
     public void CloseSettings() {
         m_settingsDialog.SetBool("isHidden", true);
         SetAllButtonsVisible(true);
     }
 
+    /// <summary>
+    /// Called when "how to" button is pressed
+    /// calls forth the how to panel
+    /// </summary>
     public void OpenHowTo() {
         SetAllButtonsVisible(false);
         m_howToDialog.SetBool("isHidden", false);
     }
 
+    /// <summary>
+    /// Called when top right button on how to pannel is pressed
+    /// goes back to main selection
+    /// </summary>
     public void CloseHowTo() {
         m_howToDialog.SetBool("isHidden", true);
         SetAllButtonsVisible(true);
     }
 
+
+    /// <summary>
+    /// hides or un-hides the main menu buttons
+    /// </summary>
+    /// <param name="visible">weather the menu should be visible</param>
     private void SetAllButtonsVisible(bool visible) {
         visible = !visible;
         m_startButton.SetBool("isHidden", visible);

@@ -15,6 +15,7 @@ public class PlatformCharacter2D : MonoBehaviour {
     private Transform m_groundCheck;
     private Animator m_anim;
     private bool m_sliding = false;
+    private bool m_isfail = false;
 
     // Use this for initialization
     void Start () {
@@ -40,7 +41,7 @@ public class PlatformCharacter2D : MonoBehaviour {
         m_anim.SetBool("Sliding", m_sliding);
     }
 
-    public void Move(bool crouch, bool m_Jump, bool test = false) {
+    public void Move(bool crouch, bool m_Jump) {
         if (m_Jump && m_grounded) {
             Jump();
         }
@@ -50,12 +51,22 @@ public class PlatformCharacter2D : MonoBehaviour {
             m_sliding = false;
         }
 
-        m_anim.SetBool("IsFail", test);
+        m_anim.SetBool("IsFail", m_isfail);
     }
 
     private void Jump() {
         print("jump");
         m_grounded = false;
         m_rigidbody.AddForce(new Vector2(0f, m_jumpForce));
+    }
+
+    public bool IsJumping() {
+        return !m_grounded;
+    }
+
+    public IEnumerator Fail() {
+        m_isfail = !m_isfail;
+        yield return new WaitForSeconds(.5f);
+        m_isfail = !m_isfail;
     }
 }
