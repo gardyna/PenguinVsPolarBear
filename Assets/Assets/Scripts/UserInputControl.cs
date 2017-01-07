@@ -34,9 +34,9 @@ public class UserInputControl : MonoBehaviour {
     {
         // Read the inputs.
         bool crouch = Input.GetKey(m_crouchButton);
-        bool test = Input.GetKey(KeyCode.T);
+        // bool test = Input.GetKey(KeyCode.T);
         // Pass all parameters to the character control script.
-        m_Character.Move(crouch, m_Jump, test);
+        m_Character.Move(crouch, m_Jump);
         m_Jump = false;
     }
 }
