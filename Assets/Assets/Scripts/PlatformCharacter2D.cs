@@ -40,7 +40,8 @@ public class PlatformCharacter2D : MonoBehaviour {
         m_anim.SetBool("Sliding", m_sliding);
     }
 
-    public void Move(bool crouch, bool m_Jump, bool test = false) {
+    public void Move(bool crouch, bool m_Jump, bool test = false)
+    {
         if (m_Jump && m_grounded) {
             Jump();
         }
