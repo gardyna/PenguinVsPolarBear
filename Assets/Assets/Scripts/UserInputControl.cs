@@ -8,6 +8,11 @@ public class UserInputControl : MonoBehaviour {
     private PlatformCharacter2D m_Character;
     private bool m_Jump;
 
+    [SerializeField]
+    private KeyCode m_jumpButton;
+    [SerializeField]
+    private KeyCode m_crouchButton;
+
 
     private void Awake()
     {
@@ -20,7 +25,7 @@ public class UserInputControl : MonoBehaviour {
         if (!m_Jump)
         {
             // Read the jump input in Update so button presses aren't missed.
-            m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
+            m_Jump = Input.GetKeyDown(m_jumpButton);
         }
     }
 
@@ -28,7 +33,7 @@ public class UserInputControl : MonoBehaviour {
     private void FixedUpdate()
     {
         // Read the inputs.
-        bool crouch = Input.GetKey(KeyCode.LeftControl);
+        bool crouch = Input.GetKey(m_crouchButton);
         bool test = Input.GetKey(KeyCode.T);
         // Pass all parameters to the character control script.
         m_Character.Move(crouch, m_Jump, test);
