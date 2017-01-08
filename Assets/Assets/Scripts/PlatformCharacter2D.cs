@@ -17,6 +17,8 @@ public class PlatformCharacter2D : MonoBehaviour {
     private bool m_sliding = false;
     private bool m_isfail = false;
 
+    private int score = 100;
+
     // Use this for initialization
     void Start () {
         m_rigidbody = GetComponent<Rigidbody2D>();
@@ -60,12 +62,22 @@ public class PlatformCharacter2D : MonoBehaviour {
         m_rigidbody.AddForce(new Vector2(0f, m_jumpForce));
     }
 
+    public int GetScore() {
+        return score;
+    }
+
     public bool IsJumping() {
         return !m_grounded;
     }
 
+    public bool IsSliding() {
+        return m_sliding;
+    }
+
     public IEnumerator Fail() {
         m_isfail = !m_isfail;
+        GetComponent<AudioSource>().Play();
+        score = score < 0 ? 0 : score-1;
         yield return new WaitForSeconds(.5f);
         m_isfail = !m_isfail;
     }

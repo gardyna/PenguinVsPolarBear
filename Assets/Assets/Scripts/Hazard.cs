@@ -6,7 +6,8 @@ public class Hazard : MonoBehaviour {
 
     [SerializeField]
     private float m_speed = 0.11f;
-
+    [SerializeField]
+    private bool m_isCrate;
 
     public bool isworking = false;
 	// Use this for initialization
@@ -26,12 +27,20 @@ public class Hazard : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision) {
         PlatformCharacter2D player = collision.gameObject.GetComponent<PlatformCharacter2D>();
         if (player && isworking) {
-            print(player.IsJumping());
-            if (!player.IsJumping()) {
+            if (!IsAwoiding(player)) {
                 isworking = false;
                 StartCoroutine(player.Fail());
             }
         }
         
+    }
+
+    private bool IsAwoiding(PlatformCharacter2D player) {
+        if (m_isCrate) {
+            return player.IsJumping();
+        }else {
+            return player.IsSliding();
+        }
+        return false;
     }
 }
