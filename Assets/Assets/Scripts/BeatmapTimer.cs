@@ -15,6 +15,9 @@ public class BeatmapTimer : MonoBehaviour {
 	[SerializeField]
 	private double launcherOffset;
 
+    [SerializeField]
+    private GameUIManagerScript m_GameUIManager;
+
 	private List<double> beatMap;
 
 	private double bpm;

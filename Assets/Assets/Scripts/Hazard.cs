@@ -30,6 +30,8 @@ public class Hazard : MonoBehaviour {
             if (!IsAwoiding(player)) {
                 isworking = false;
                 StartCoroutine(player.Fail());
+            }else {
+                player.Yay();
             }
         }
         
