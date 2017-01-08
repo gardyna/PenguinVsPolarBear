@@ -3,28 +3,37 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class BeatmapTimer : MonoBehaviour {
-
+	
 	[SerializeField]
 	private AudioSource noot;
 	[SerializeField]
 	private AudioSource cue;
 	[SerializeField]
-	private int initDelay = 16;
+	private Launcher bearLauncher;
+	[SerializeField]
+	private Launcher penguinLauncher;
+	[SerializeField]
+	private double launcherOffset;
+
+	private List<double> beatMap;
 
 	private double bpm;
 	private double bpmInSeconds;
+
 	private double nextTime;
 	private double cueTime;
-	private List<double> beatMap;
+	private double launchTime;
+
 	private int beatMapPos;
 	private int cueMapPos;
+	private int launchMapPos;
 
 	private List<double> GenLevel() {
 		List<double> level = new List<double>();
 		double[] firstPool = { 4, 2, 2 };
 		double[] secondPool = { 2, 1, 1 };
 		double[] thirdPool = { 2, 1, 1, 1 };
-		double[] fourthPool = { 2, 1, 1, 1, 0.5, 0.5 };
+		double[] fourthPool = { 2, 1, 1, 1, 1, 1, 1, 1 };
 		double sum = 0;
 
 		for (int i = 0; i < 4; i++) {
@@ -104,8 +113,9 @@ public class BeatmapTimer : MonoBehaviour {
 		bpm = 140;
 		bpmInSeconds = 60 / bpm;
 		beatMap = GenLevel ();
-		nextTime = AudioSettings.dspTime + initDelay*bpmInSeconds;
+		nextTime = AudioSettings.dspTime + 16*bpmInSeconds;
 		cueTime = nextTime - 8 * bpmInSeconds;
+		launchTime = nextTime - 4 * bpmInSeconds + launcherOffset;
 	}
 		
 	void Update () {
@@ -128,7 +138,7 @@ public class BeatmapTimer : MonoBehaviour {
 		}
 
 		if (AudioSettings.dspTime >= nextTime) {
-			noot.Play();
+			//noot.Play();
 			nextTime += beatMap[beatMapPos]*bpmInSeconds;
 
 			//TODO: muna að taka i'burtu þegar þeta loopar ekki lengur
@@ -136,6 +146,26 @@ public class BeatmapTimer : MonoBehaviour {
 				beatMapPos = 0;
 			} else {
 				beatMapPos += 1;
+			}
+		}
+
+		if (AudioSettings.dspTime >= launchTime) {
+			if (Random.Range (0, 2) == 1) {
+				bearLauncher.FireIce ();
+				penguinLauncher.FireIce ();
+			} else {
+				bearLauncher.FireBox ();
+				penguinLauncher.FireBox ();
+			}
+
+
+			launchTime += beatMap [launchMapPos] * bpmInSeconds;
+
+			//TODO: muna að taka í burtu þegar þetta loopar ekki lengur
+			if (launchMapPos + 1 == beatMap.Count) {
+				launchMapPos = 0;
+			} else {
+				launchMapPos += 1;
 			}
 		}
 	}
