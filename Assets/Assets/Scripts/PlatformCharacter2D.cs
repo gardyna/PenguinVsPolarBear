@@ -22,8 +22,11 @@ public class PlatformCharacter2D : MonoBehaviour {
 
     private int score = 100;
 
+    private AudioSource[] sounds;
+
     // Use this for initialization
     void Start () {
+        sounds = GetComponents<AudioSource>();
         m_rigidbody = GetComponent<Rigidbody2D>();
         m_groundCheck = transform.Find("GroundCheck");
         m_anim = GetComponent<Animator>();
@@ -79,13 +82,15 @@ public class PlatformCharacter2D : MonoBehaviour {
 
     public IEnumerator Fail() {
         m_isfail = !m_isfail;
-        GetComponent<AudioSource>().Play();
+        //GetComponent<AudioSource>().Play();
+        sounds[0].Play();
         score = score < 0 ? 0 : score-1;
         yield return new WaitForSeconds(.5f);
         m_isfail = !m_isfail;
     }
 
     public void Yay() {
-        GetComponent<AudioSource>().PlayOneShot(m_yayClip);
+        sounds[1].Play();
+        //GetComponent<AudioSource>().PlayOneShot(m_yayClip);
     }
 }
