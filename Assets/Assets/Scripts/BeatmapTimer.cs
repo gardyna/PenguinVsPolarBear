@@ -73,7 +73,7 @@ public class BeatmapTimer : MonoBehaviour {
 			sum = 0;
 		}
 
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i < 4; i++) {
 			while (sum < 7) {
 				int mult = 1;
 				double pick = fourthPool [Random.Range (0, fourthPool.Length - 1)];
