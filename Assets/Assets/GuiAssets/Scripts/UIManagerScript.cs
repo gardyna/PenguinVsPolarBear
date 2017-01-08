@@ -16,6 +16,9 @@ public class UIManagerScript : MonoBehaviour {
     [SerializeField]
     private Animator m_howToDialog;
 
+    [SerializeField]
+    private Animator m_startSingleButton;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -32,6 +35,10 @@ public class UIManagerScript : MonoBehaviour {
     /// </summary>
     public void StartGame() {
         SceneManager.LoadScene("Main");
+    }
+
+    public void StartSinglePlayer() {
+        SceneManager.LoadScene("SinglePlayerMain");
     }
 
     /// <summary>
@@ -80,5 +87,6 @@ public class UIManagerScript : MonoBehaviour {
         m_startButton.SetBool("isHidden", visible);
         m_howToButton.SetBool("isHidden", visible);
         m_settingsButton.SetBool("isHidden", visible);
+        m_startSingleButton.SetBool("isHidden", visible);
     }
 }

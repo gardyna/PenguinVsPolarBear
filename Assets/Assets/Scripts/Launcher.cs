@@ -14,6 +14,9 @@ public class Launcher : MonoBehaviour {
     [SerializeField]
     private List<GameObject> m_cielings;
 
+    [SerializeField]
+    private float m_iceOffset = 3;
+
 	// Use this for initialization
 	void Start () {
 		foreach(GameObject h in m_crates) {
@@ -57,7 +60,7 @@ public class Launcher : MonoBehaviour {
         i.SetActive(true);
         i.GetComponent<Hazard>().isworking = true;
         i.transform.position = new Vector2(this.transform.position.x,
-                                           this.transform.position.y+3);
+                                           this.transform.position.y+m_iceOffset);
         m_cielings.RemoveAt(0);
         m_cielings.Add(i);
     }
