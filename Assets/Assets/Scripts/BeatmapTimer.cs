@@ -30,6 +30,7 @@ public class BeatmapTimer : MonoBehaviour {
 	private int beatMapPos;
 	private int cueMapPos;
 	private int launchMapPos;
+    
 
 	private List<double> GenLevel() {
 		List<double> level = new List<double>();
@@ -39,7 +40,7 @@ public class BeatmapTimer : MonoBehaviour {
 		double[] fourthPool = { 2, 1, 1, 1, 1, 1, 1, 1 };
 		double sum = 0;
 
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 4; i++) {
 			//First sublevel. Endsums 4 and 6.
 			while (sum < 4) {
 				double pick = firstPool [Random.Range (0, firstPool.Length - 1)];
@@ -55,7 +56,7 @@ public class BeatmapTimer : MonoBehaviour {
 			sum = 0;
 		}
 
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 4; i++) {
 			while (sum < 6) {
 				double pick = secondPool [Random.Range (0, secondPool.Length - 1)];
 				if (pick + sum < 6) {
@@ -70,7 +71,7 @@ public class BeatmapTimer : MonoBehaviour {
 			sum = 0;
 		}
 
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 4; i++) {
 			while (sum < 7) {
 				double pick = thirdPool [Random.Range (0, thirdPool.Length - 1)];
 				if (pick + sum < 7) {
@@ -85,7 +86,7 @@ public class BeatmapTimer : MonoBehaviour {
 			sum = 0;
 		}
 
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 4; i++) {
 			while (sum < 7) {
 				int mult = 1;
 				double pick = fourthPool [Random.Range (0, fourthPool.Length - 1)];
@@ -147,6 +148,9 @@ public class BeatmapTimer : MonoBehaviour {
 			//TODO: muna að taka i'burtu þegar þeta loopar ekki lengur
 			if (beatMapPos+1 == beatMap.Count) {
 				beatMapPos = 0;
+                launchMapPos = 0;
+                cueMapPos = 0;
+                StartCoroutine(EndGame());
 			} else {
 				beatMapPos += 1;
 			}
@@ -172,4 +176,12 @@ public class BeatmapTimer : MonoBehaviour {
 			}
 		}
 	}
+
+    private IEnumerator EndGame() {
+        beatMap.Clear();
+        beatMap.Add(double.PositiveInfinity);
+        yield return new WaitForSeconds(3);
+        m_GameUIManager.GameOver();
+
+    }
 }
