@@ -10,6 +10,9 @@ public class PlatformCharacter2D : MonoBehaviour {
     [SerializeField]
     private LayerMask m_whatIsGround;
 
+    [SerializeField]
+    private AudioClip m_yayClip;
+
     private Rigidbody2D m_rigidbody;
     private bool m_grounded = true;
     private Transform m_groundCheck;
@@ -80,5 +83,9 @@ public class PlatformCharacter2D : MonoBehaviour {
         score = score < 0 ? 0 : score-1;
         yield return new WaitForSeconds(.5f);
         m_isfail = !m_isfail;
+    }
+
+    public void Yay() {
+        GetComponent<AudioSource>().PlayOneShot(m_yayClip);
     }
 }
