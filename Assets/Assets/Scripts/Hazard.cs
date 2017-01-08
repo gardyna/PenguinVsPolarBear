@@ -43,6 +43,5 @@ public class Hazard : MonoBehaviour {
         }else {
             return player.IsSliding();
         }
-        return false;
     }
 }
