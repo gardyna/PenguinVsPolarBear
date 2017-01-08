@@ -37,7 +37,7 @@ public class BeatmapTimerHard : MonoBehaviour {
 		double[] firstPool = { 4, 2, 2 };
 		double[] secondPool = { 2, 1, 1 };
 		double[] thirdPool = { 2, 1, 1, 1 };
-		double[] fourthPool = { 2, 1, 1, 1, 0.5, 0.5 };
+		double[] fourthPool = { 2, 1, 1, 1, 1, 0.5 };
 		double sum = 0;
 
 		for (int i = 0; i < 4; i++) {

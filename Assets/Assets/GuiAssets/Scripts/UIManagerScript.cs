@@ -19,6 +19,8 @@ public class UIManagerScript : MonoBehaviour {
     [SerializeField]
     private Animator m_startSingleButton;
 
+    public bool m_hardMode { get; set; }
+
 	// Use this for initialization
 	void Start () {
 		
@@ -34,11 +36,19 @@ public class UIManagerScript : MonoBehaviour {
     /// launches the main scene
     /// </summary>
     public void StartGame() {
-        SceneManager.LoadScene("Main");
+        if (m_hardMode) {
+            SceneManager.LoadScene("Main_Hard");
+        } else {
+            SceneManager.LoadScene("Main");
+        }
     }
 
     public void StartSinglePlayer() {
-        SceneManager.LoadScene("SinglePlayerMain");
+        if (m_hardMode) {
+            SceneManager.LoadScene("SinglePlayerMain_Hard");
+        } else {
+            SceneManager.LoadScene("SinglePlayerMain");
+        }
     }
 
     /// <summary>
