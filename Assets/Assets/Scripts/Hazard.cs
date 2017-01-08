@@ -5,7 +5,7 @@ using UnityEngine;
 public class Hazard : MonoBehaviour {
 
     [SerializeField]
-    private float m_speed = 0.11f;
+    private float m_speed = 0.2f;
     [SerializeField]
     private bool m_isCrate;
 
